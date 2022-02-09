@@ -48,9 +48,6 @@ Use the copy function below to do the following:
 function copy(array){
   return [...array];
 }    
-console.log(copy(originalFlavors))
-
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -89,10 +86,9 @@ Use the addFlavor function below to do the following:
 */
 
 function addFlavor(array, flavor){
- array.unshift();
+ array.unshift(flavor);
  return array;
 }
-console.log(addFlavor(originalFlavors, "Rainbow Sherbert"))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -110,7 +106,6 @@ function removeLastFlavor(array){
   return array;
 }
 
-// console.log(removeLastFlavor(originalFlavors))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
@@ -126,7 +121,6 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(array, index){
   return array[index];
 }
-console.log(getFlavorByIndex(originalFlavors, 2))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
@@ -151,7 +145,6 @@ function removeFlavorByName(array, flavor){
   }
   return array;
 }
-console.log(removeFlavorByName(originalFlavors, "Rocky Road"))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
@@ -173,8 +166,8 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-let newArr = [];
 function filterByWord(array, string){
+  let newArr = [];
   for(let i = 0; i < array.length; i++){
     if(array[i].includes(string)){
       newArr.push(array[i]);
@@ -182,7 +175,7 @@ function filterByWord(array, string){
   }
   return newArr;
 }
-console.log(filterByWord(originalFlavors, "Chocolate"))
+console.log(filterByWord(originalFlavors, 'Chocolate'))
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
